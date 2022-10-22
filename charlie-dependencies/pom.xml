@@ -4,10 +4,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.cl.code</groupId>
+    <parent>
+        <groupId>com.cl.code</groupId>
+        <artifactId>charlie</artifactId>
+        <version>${revision}</version>
+    </parent>
+
     <artifactId>charlie-dependencies</artifactId>
+    <version>${revision}</version>
     <packaging>pom</packaging>
-    <version>1.0.0</version>
 
     <properties>
         <spring.boot-version>2.6.12</spring.boot-version>
@@ -46,6 +51,12 @@
                 <groupId>com.google.code.gson</groupId>
                 <artifactId>gson</artifactId>
                 <version>${gson-verison}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.cl.code</groupId>
+                <artifactId>charlie-common</artifactId>
+                <version>${revision}</version>
             </dependency>
 
         </dependencies>
