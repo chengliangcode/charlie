@@ -2,35 +2,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>charlie</artifactId>
-        <groupId>com.cl.code</groupId>
-        <version>${revision}</version>
-    </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>com.cl.code</groupId>
     <artifactId>charlie-dependencies</artifactId>
-    <version>${revision}</version>
     <packaging>pom</packaging>
+    <version>1.0.0</version>
 
     <properties>
         <spring.boot-version>2.6.12</spring.boot-version>
         <alibaba.cloud-version>2021.0.4.0</alibaba.cloud-version>
         <spring.cloud-version>2021.0.4</spring.cloud-version>
         <hutool.captcha-version>5.8.8</hutool.captcha-version>
-        <gson.verison>2.9.1</gson.verison>
+        <gson-verison>2.9.1</gson-verison>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-parent</artifactId>
-                <version>${spring.boot-version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
 
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
@@ -57,11 +45,10 @@
             <dependency>
                 <groupId>com.google.code.gson</groupId>
                 <artifactId>gson</artifactId>
-                <version>${gson.verison}</version>
+                <version>${gson-verison}</version>
             </dependency>
 
         </dependencies>
     </dependencyManagement>
-
 
 </project>
