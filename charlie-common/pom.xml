@@ -6,11 +6,19 @@
 
     <parent>
         <groupId>com.cl.code</groupId>
-        <artifactId>charlie</artifactId>
+        <artifactId>charlie-parent</artifactId>
         <version>${revision}</version>
+        <relativePath/>
     </parent>
 
     <artifactId>charlie-common</artifactId>
     <version>${revision}</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
