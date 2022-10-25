@@ -5,26 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.cl.code</groupId>
         <artifactId>charlie</artifactId>
+        <groupId>com.cl.code</groupId>
         <version>${revision}</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>charlie-common</artifactId>
-    <version>${revision}</version>
-
-    <properties>
-        <revision>1.0.0</revision>
-    </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>cn.hutool</groupId>
-            <artifactId>hutool-all</artifactId>
-        </dependency>
-    </dependencies>
-
-
+    <artifactId>charlie-components</artifactId>
+    <packaging>pom</packaging>
 
 </project>

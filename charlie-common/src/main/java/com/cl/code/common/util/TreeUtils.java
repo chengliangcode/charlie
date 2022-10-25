@@ -1,22 +1,13 @@
 package com.cl.code.common.util;
 
-
-import lombok.Data;
-import lombok.extern.slf4j.Slf4j;
-
 /**
  * @author chengliang
- * @since 2022/10/22 15:20
+ * @since 2022/10/25 13:11
  */
-@Data
-@Slf4j
 public class TreeUtils {
 
-    private static String id = "111";
+    public static void toTree() {
 
-    public static String toTree() {
-        log.debug("值:{}", id);
-        return id;
     }
 
 }
